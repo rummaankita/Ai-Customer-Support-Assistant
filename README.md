@@ -1,6 +1,6 @@
 # 🤖 AI Customer Support Assistant
 
-A simple, beginner-friendly AI-powered customer support chatbot built with
+A simple,  AI-powered customer support chatbot built with
 **Python Flask**, **HTML/CSS/JavaScript**, and the **Groq API** (running
 Llama 3.3 for fast, free AI responses).
 
