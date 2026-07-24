@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Customer Support Assistant</title>
+
+    <!-- Link our custom stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+    <!-- Main chat container -->
+    <div class="chat-container">
+
+        <!-- Header section -->
+        <div class="chat-header">
+            <div class="header-icon">🤖</div>
+            <div class="header-text">
+                <h1>AI Customer Support Assistant</h1>
+                <p>We're online — ask us anything!</p>
+            </div>
+        </div>
+
+        <!-- All chat messages will appear here -->
+        <div class="chat-messages" id="chat-messages">
+            <!-- Greeting message will be added automatically by script.js -->
+        </div>
+
+        <!-- Loading indicator shown while waiting for AI reply -->
+        <div class="loading-indicator" id="loading-indicator">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!-- Message input area, fixed at the bottom -->
+        <div class="chat-input-area">
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Type your message here..."
+                autocomplete="off"
+            />
+            <button id="send-button" title="Send message">
+                <span>Send</span> ➤
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Link our custom JavaScript (placed at the end so HTML loads first) -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
